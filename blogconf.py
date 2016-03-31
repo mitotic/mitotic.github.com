@@ -1,9 +1,9 @@
-SITEURL = 'http://mitotic.org/blog'
+SITEURL = 'http://code.mitotic.org/blog'
 
 AUTHOR = 'Saravanan'
 #AUTHOR_SAVE_AS = False
 
-SITENAME = 'mitotic.org/blog'
+SITENAME = 'code.mitotic.org/blog'
 TIMEZONE = 'America/Chicago'
 DEFAULT_DATE_FORMAT = '%b %d, %Y'
 
