@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>mitotic.org/blog - Saravanan</title>
+        <title>Inline data visualization using matplotlib in GraphTerm</title>
         <link rel="stylesheet" href="http://mitotic.org/blog/theme/css/main.css" />
         <link href="http://mitotic.org/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="mitotic.org/blog Atom Feed" />
 
@@ -16,13 +16,19 @@
                 <h1><a href="http://mitotic.org/blog/">mitotic.org/blog </a></h1>
                 <nav><ul>
                     <li><a href="http://mitotic.org/blog/pages/about.html">about</a></li>
-                    <li><a href="http://mitotic.org/blog/category/matplotlib.html">matplotlib</a></li>
+                    <li class="active"><a href="http://mitotic.org/blog/category/matplotlib.html">matplotlib</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://mitotic.org/blog/posts/2012/10/03/inline-data-visualization/" rel="bookmark"
+           title="Permalink to Inline data visualization using matplotlib in GraphTerm">Inline data visualization using matplotlib in GraphTerm</a></h1>
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="rsarava">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://mitotic.org/blog/posts/2012/10/03/inline-data-visualization/">Inline data visualization using matplotlib in GraphTerm</a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2012-10-03T10:20:00-05:00">
                 Published: Oct 03, 2012
@@ -33,7 +39,7 @@
         </address>
 <p>In <a href="http://mitotic.org/blog/category/matplotlib.html">matplotlib</a>.</p>
 <p>tags: <a href="http://mitotic.org/blog/tag/matplotlib.html">matplotlib</a> <a href="http://mitotic.org/blog/tag/graphterm.html">graphterm</a> <a href="http://mitotic.org/blog/tag/data-visualization.html">data visualization</a> </p>
-</footer><!-- /.post-info --><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">N</span>
+</footer><!-- /.post-info -->      <div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">N</span>
 <span class="kn">import</span> <span class="nn">Scientific.IO.NetCDF</span> <span class="kn">as</span> <span class="nn">S</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="n">fileobj</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">NetCDFFile</span><span class="p">(</span><span class="err">’</span><span class="n">air</span><span class="o">.</span><span class="n">mon</span><span class="o">.</span><span class="n">mean</span><span class="o">.</span><span class="n">nc</span><span class="err">’</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="err">’</span><span class="n">r</span><span class="err">’</span><span class="p">)</span>
@@ -57,8 +63,26 @@
 <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="err">’</span><span class="n">exercise</span><span class="o">-</span><span class="n">T</span><span class="o">-</span><span class="n">contour</span><span class="o">.</span><span class="n">png</span><span class="err">’</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-<p>There are <a href="http://mitotic.org/blog/posts/2012/10/03/inline-data-visualization/#disqus_thread">comments</a>.</p>                </article>
-            </aside><!-- /#featured -->
+
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'codemindmeldr';
+        var disqus_identifier = 'posts/2012/10/03/inline-data-visualization/';
+        var disqus_url = 'http://mitotic.org/blog/posts/2012/10/03/inline-data-visualization/';
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//codemindmeldr.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the comments.</noscript>
+    </div>
+
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="social">
                         <h2>social</h2>
