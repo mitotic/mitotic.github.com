@@ -164,7 +164,8 @@ if (sessionID in wheelState) {
 
 var newNameStr = getParameterByName('names');
 if (!newNameStr && !curNameStr) {
-    newNameStr = window.prompt("Enter semicolon- or comma- or space-separated list of names:", "John Smith;Jane Doe;Gilgamesh") || "alpha;beta;gamma;delta;epsilon;zeta;eta;theta;iota";
+    newNameStr = window.prompt("Enter a list of names, separated by line-breaks, semicolons, commas or spaces:",
+"Jane Doe;John Doe;John Smith") || "alpha;beta;gamma;delta;epsilon;zeta;eta;theta;iota";
 }
 
 if (newNameStr) {

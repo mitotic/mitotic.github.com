@@ -29,31 +29,13 @@ students, and keep them attentive.
 from the class roster. You can use full names, or an abbreviated form,
 such as first name plus enough letters from the last name to make it
 unique, e.g., <tt>JaneDo; JohnS</tt>. Names in the list may be
-separated by newlines, semicolons, commas or spaces. You can create a
-newline-separated list of names by simply copying from an Excel
+separated by line-breaks, semicolons, commas or spaces. You can create a
+line-break-separated list of names by simply copying from an Excel
 spreadsheet column, or from a file with a name in each line, and
-pasting it into the dialog box. (To use Qwheel without accessing the
-web, see <em>Code</em> info below.)
-
-<p></p>
-
-Alternatively, you can create a permanent URL for creating a new
-session. Start with a list of semicolon- or comma-separated names. If
-there are any spaces within names, replace them with plus (+)
-signs. Then generate a URL string that looks like this: <br> <tt><a
-href="http://pyintro.org/wheel/?session=math101&names=Jane+Doe;John+Doe;John+Smith">http://pyintro.org/wheel/?session=math101&names=Jane+Doe;John+Doe;John+Smith</a></tt>
-
-This URL can be stored in a file and reused to restart a session, as
-needed. Note that the query symbol (<tt>?</tt>) denotes the start of
-the parameter list and the ampersand (<tt>&amp;</tt>) separates
-different parameters. The optional <tt>session</tt> parameter enables
-multiple parallel sessions. Another optional parameter <tt>max</tt>
-may be used to specify the maximum number of names displayed (default:
-30). If there are more names than this maximum, a random subset of
-consecutive names from the list is pre-selected and displayed in the
-wheel. If the <tt>names</tt> parameter is omitted, the list of names
-can be entered manually via a dialog box. (The <em>Export</em> option
-in the drop-down menu may be used to re-create the URL.)
+pasting it into the dialog box when requested. The <em>Export</em>
+option in the drop-down menu may be used to generate an URL that can
+be copied to re-create the name list in a different browser. (To use
+Qwheel without accessing the web, see <em>Code</em> info below.)
 
 <p></p>
 
@@ -76,18 +58,39 @@ the browser. (Deleting the default session will re-create it.)
 pasted in a different browser.
 
 <p></p>
+
+<b>Creating URLs</b>: As an alternative to copying/pasting names, you
+can generate a permanent URL for creating a new session. Start with a
+list of semicolon- or comma-separated names. If there are any spaces
+within names, replace them with plus (+) signs. Then generate a URL
+string that looks like this: <br> <tt><a
+href="http://code.mitotic.org/wheel/?session=math101&names=Jane+Doe;John+Doe;John+Smith">http://code.mitotic.org/wheel/?session=math101&names=Jane+Doe;John+Doe;John+Smith</a></tt>
+
+This URL can be stored in a file and reused to restart a session, as
+needed. Note that the query symbol (<tt>?</tt>) denotes the start of
+the parameter list and the ampersand (<tt>&amp;</tt>) separates
+different parameters. The optional <tt>session</tt> parameter enables
+multiple parallel sessions. Another optional parameter <tt>max</tt>
+may be used to specify the maximum number of names displayed (default:
+30). If there are more names than this maximum, a random subset of
+consecutive names from the list is pre-selected and displayed in the
+wheel. If the <tt>names</tt> parameter is omitted, the list of names
+can be entered manually via a dialog box.
+
+<p></p>
+
 <b>Sample URLs</b>:<br>
 <tt><a
-href="http://pyintro.org/wheel/">http://pyintro.org/wheel/</a></tt>
+href="http://code.mitotic.org/wheel/">http://code.mitotic.org/wheel/</a></tt>
 <em>Enter names via dialog box for default session</em>
 <br>
 <tt><a
-href="http://pyintro.org/wheel/?names=JohnS,JaneD">http://pyintro.org/wheel/?names=JohnS,JaneD</a></tt>
+href="http://code.mitotic.org/wheel/?names=JohnS,JaneD">http://code.mitotic.org/wheel/?names=JohnS,JaneD</a></tt>
 <em>Default session, comma-separated first names+last initials</em>
 <br>
 <tt><a
-href="http://pyintro.org/wheel/?session=calc101&max=15&names=John+Smith,
-jr.;Jane+Doe">http://pyintro.org/wheel/?session=calc101&max=15&names=John+Smith,jr.;Jane+Doe</a></tt>
+href="http://code.mitotic.org/wheel/?session=calc101&max=15&names=John+Smith,
+jr.;Jane+Doe">http://code.mitotic.org/wheel/?session=calc101&max=15&names=John+Smith,jr.;Jane+Doe</a></tt>
 <em>Named session, semicolon-separated names, max. display of 15 names</em>
 
 <p></p>
